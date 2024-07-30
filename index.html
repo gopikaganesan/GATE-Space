@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <title>🚀 GATE Space</title>
+</head>
+<body>
+    <header>
+        <div id="details">
+        <h2 id="name" style="text-transform: capitalize; text-align: center;"> </h2>
+        <p style="display: flex;">🌐Website : &nbsp;<a href="https://gate2025.iitr.ac.in/index.html" target="_blank" style="text-decoration: underline;">GATE 2025</a></p>
+        <p style="display: flex;">🔗Checklist : &nbsp;<a id="checkLink" target="_blank" style="text-decoration: underline;"></a></p>
+        </div>
+        <div id="cBox">
+        <div id="d2go"> </div>
+        Days to Go
+    </div>
+    
+    <div style="width: 150px" class="progress-space">
+    </div>
+
+    <div id="agenda">
+      <a class="agendaAnchor" href="https://www.canva.com/design/DAGL-KuNAho/nXzSsRUzN5yTTiiblK9oUg/view" target="_blank"> <!--Link to your agenda here-->
+        <span class="agendaLabel">View Agenda</span>
+      </a>
+    </div>
+
+    </header>
+
+    <section id="subject">
+        <div>
+            <span style="font-size: large; padding: 20px; font-size: 25px; font-family: Verdana, Geneva, Tahoma, sans-serif;"><u>Subjects</u></span>
+            
+
+            <section id="gen-sub">
+                <div class="subCatHead">
+                <span id="shname">General Subjects</span> 
+                <span id="shwei">Weightage: 27- 30%</span>
+                </div>
+                <div class="subList"></div>
+            </section>
+            <section id="core-sub">
+                <div class="subCatHead">
+                <span id="shname">Core Subjects</span> 
+                <span id="shwei">Weightage: 70 - 75%</span>
+                </div>
+                <div class="subList"></div>
+            </section>
+        </div>
+    </section>
+    <footer>
+        <div id="theme-selection-section">
+            <button id="showSpotifyPlaylist" class="themeButton" onclick="showSpotifyPlaylist()">▶&nbsp; Play Music</button>
+            <span id="spotifyEmbeded">
+                <iframe id="spotifyFrame" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX5KpP2LN299J?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <button id="closeSpotify" class="themeButton" onclick="showSpotifyPlaylist()">X</button>
+            </span>
+            <button id="selectTheme" class="themeButton" onclick="setThemeVisibility()">Change Mode</button>
+            <span id="themeOptions">
+                <button id="blinkThemeOption" class="themeButton" onclick="setThemeMode('blink-mode')">Blink Mode</button>
+                <button id="walkerThemeOption" class="themeButton" onclick="setThemeMode('walker-mode')">Walker Mode</button>
+                <button id="llitThemeOption" class="themeButton" onclick="setThemeMode('llit-mode')">LLIT Mode</button>
+                <button id="saveTheme" class="themeButton" onclick="saveTheme()">Save</button>
+                <button id="cancelTheme" class="themeButton" onclick="setThemeVisibility()">X</button>
+            </span>
+        </div>
+        <!-- <div id="informationSection"></div> -->
+    </footer>
+
+    <!--Templates-->
+    <template id="card-template">
+        <a target="_blank">
+            <div class="subCard">
+                <img id="sub-icon" alt="mode-con"/>
+                <span id="sub-progress">
+                    <progress max="100"></progress> <span class="progress-value"></span>
+                </span>
+                <div class="subName"></div>
+                
+                
+            </div> 
+        </a> 
+    </template>
+    <template id="circular-progress">
+        <span id="progressTag">
+        <progress-circle class="pc" value="0%" stroke="#F25278">Progress</progress-circle>
+    </span>
+    </template>
+</body>
+<script src="script/main.js"></script>
+<script src="https://pie-meister.github.io/PieMeister-with-Progress.min.js"></script>
+</html>
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>👤Set Username</title>
+        <link rel="stylesheet" href="../style/setName.css">
+        <script>
+        function saveUserName(event) {
+            event.preventDefault();
+        
+            const userName = document.getElementById('name').value;
+            localStorage.setItem('User name',userName);
+        
+            window.location.href = '../index.html';
+        }</script>
+    </head>
+    <body>
+        <h1 id="welcomeMessage">Hi! Welcome to Gopika's Gate Space</h1>
+        <section id="formBox">
+            <h3 id="message"></h3>
+            <form onsubmit="saveUserName(event)">
+                <label for="name">Username: </label>
+                <input type="text" id="name" name="name" placeholder="Eg., Aespa" required>
+                <button type="submit">Save & Continue</button>
+            </form>
+        </section> 
+        <script src="../script/setUserName.js"></script>
+    </body>
+</html>

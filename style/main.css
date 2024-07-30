@@ -1,0 +1,434 @@
+.blink-mode{
+    --header-bg-color: pink;
+    --header-bg-image: url('../images/blink/blackLiquidFlow.png');
+    /* Probably FB event post cover size*/
+    --header-content-margin-top: 55px;
+    --header-color: black;
+    --header-text-shadow: none;
+    --header-bg-position: center top;
+    --header-animation: backgroundFlowDown 2s ease-out;
+     /* change the above value once you change the name okay */
+    --header-details-margin-top: 25px;
+    --font-family: cursive;
+    /* name, subject and footer (theme button) section*/
+    --agenda-bg-image:  url('../images/blink/agendaBg.png');
+    /* I ll let you know, for now refer canva*/
+    --agenda-label-color:pink;
+    --agenda-label-color-hover: palevioletred;
+    --agenda-box-shadow:-2px -4px 16px;
+    --body-bg-color: rgb(35, 35, 35);
+    --body-color: pink;
+    --body-text-shadow:none;
+    --sub-progress-color: black;
+    --sub-progress-accent: lightpink;
+    --sub-name-color: black;
+    --sub-name-text-shadow: 1px 1px 2px pink;
+    --sub-icon-content-image: url('../images/blink/hammerBong-icon.png');
+    /* make sure its 80px X 80px */
+    --footer-bg-color: black;
+    --theme-button-border: 1px solid pink;
+    --theme-button-box-shadow: 0px 0px 8px pink;
+    --theme-button-color: lightcoral;
+    --cancel-save-hover-bg-color: lightcoral;
+    --cancel-save-hover-color: black;
+    --cancel-save-hover-border: 1px solid lightpink;
+}
+
+.walker-mode{
+
+    --header-bg-color: black;
+    --header-bg-image: url('../images/walker/walker-bg.png');
+    /* Probably FB event post cover size*/
+    --header-content-margin-top: 50px;
+    --header-color: #AFEEEE;
+    --header-text-shadow: 0px 0px 4px #1ca9c9;
+    --header-bg-position: center top;
+    --header-animation: backgroundFlowUp 2s ease-out;
+     /* change the above value once you change the name okay */
+    --header-details-margin-top: 20px;
+    --font-family: math;
+    /* name, subject and footer (theme button) section*/
+    --agenda-bg-image:  url('../images/walker/WalkerAgenda.png');
+    /* I ll let you know, for now refer canva*/
+    --agenda-label-color:#002244;
+    --agenda-label-color-hover: #48D1CC;
+    --agenda-box-shadow:0px 0px 8px;
+    --body-bg-color: #002;
+    --body-color: azure;
+    --body-text-shadow: 0px 0px 8px #66CDAA;
+    --sub-progress-color: aquamarine;
+    --sub-progress-accent: #B2FFFF;
+    --sub-name-color: azure;
+    --sub-name-text-shadow: 0px 0px 4px aqua;
+    --sub-icon-content-image: url('../images/walker/walker-icon.png');
+    /* make sure its 80px X 80px */
+    --footer-bg-color: black;
+    --theme-button-border: 1px solid #6CB4EE;
+    --theme-button-box-shadow: 0px 0px 8px azure;
+    --theme-button-color: #00BFFF;
+    --cancel-save-hover-bg-color: #5F9EA0;
+    --cancel-save-hover-color: #0a2351;
+    --cancel-save-hover-border: 1px solid azure;
+
+}
+
+.llit-mode {
+
+    /* font-family: fantasy */
+    --header-bg-color: #367588;
+    --header-bg-image: none;
+    /* Probably FB event post cover size*/
+    --header-content-margin-top: 50px;
+    --header-color: #e1ebee;
+    --header-text-shadow: 1px 1px 3px #002;
+    --header-bg-position: center top;
+    --header-animation: none;
+     /* change the above value once you change the name okay */
+    --header-details-margin-top: 20px;
+    --font-family: fantasy;
+    /* name, subject and footer (theme button) section*/
+    --agenda-bg-image:  url('../images/llit/litAgenda.png');
+    /* I ll let you know, for now refer canva*/
+    --agenda-label-color:black;
+    --agenda-label-color-hover: white;
+    --agenda-box-shadow: 2px 4px 4px black;
+    --body-bg-color: #E1EBEE;
+    --body-color: black;
+    --body-text-shadow: none;
+    --sub-progress-color: black;
+    --sub-progress-accent: #003153;
+    --sub-name-color: #363839;
+    --sub-name-text-shadow: none;
+    --sub-icon-content-image: url('../images/llit/lightIcon.png');
+    /* make sure its 80px X 80px */
+    --footer-bg-color: grey;
+    --theme-button-border: 2px solid black;
+    --theme-button-box-shadow: 2px 2px 4px black;
+    --theme-button-color: black;
+    --cancel-save-hover-bg-color: azure;
+    --cancel-save-hover-color: black;
+    --cancel-save-hover-border: 1px solid black;
+
+}
+
+
+
+@keyframes 
+    backgroundFlowDown{
+        from {
+            background-position: center -70px;
+        }
+        to {
+            background-position: center top;
+        }
+
+    }
+
+    @keyframes 
+    backgroundFlowUp{
+        from {
+            background-position: center 70px;
+        }
+        to {
+            background-position: center top;
+        }
+
+    }
+
+
+.subCard {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 250px;
+    height: 150px;
+    margin: 30px;
+    display: fixed;
+    border-radius: 12px;
+
+}
+
+#d2go{
+    font-size:xx-large;
+    font-family:cursive;
+    padding: 5px;
+}
+
+#cBox{
+    background-color: rgb(237, 233, 151);
+    padding: 30px;
+    width: fit-content;
+    border: 2px solid black;
+    box-shadow: 2px 8px 8px 0 gray;
+    border-radius: 3px;
+    text-align: center;
+    transition: 2s;
+    margin: 30px;
+    color: black;
+    text-shadow: none;
+    margin-top: var(--header-content-margin-top);
+}
+
+#cBox:hover{
+    background-color: rgb(166, 239, 239);
+    transform: scale(1.2);
+    transition: 1.5s;
+    justify-self: center;
+}
+
+/* On mouse-over, add a deeper shadow */
+.subCard:hover {
+    box-shadow: 0 8px 16px 0 gray;
+    transform: scale(1.1);
+}
+
+/* Add some padding inside the card container */
+.subName {
+    padding: 60px;
+    margin-top: -180px;
+    margin-left: -30px;
+    font-family: var(--font-family);
+    color: var(--sub-name-color);
+    text-shadow: var(--sub-name-text-shadow);
+}
+
+.subList {
+    margin-left: 5%;
+    display: flex;
+   /* grid-template-columns: repeat(4, 1fr); /* Creates 3 equal columns */
+   flex-direction: row; /* Arrange items horizontally (in a row) */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    /* Additional styling as needed */
+}
+
+a{
+    display: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+header{
+    background-image: var(--header-bg-image);
+    background-color: var(--header-bg-color);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+    color: var(--header-color);
+    text-shadow: var(--header-text-shadow);
+    background-repeat: no-repeat;
+    /* background-size: 380px; */ 
+    background-position: var(--header-bg-position);
+    animation: var(--header-animation);
+    width: 100%;
+    margin: 0%;
+}
+
+h2{
+    font-size: xx-large;
+    font-family: var(--font-family);
+}
+
+
+body{
+    background-color: var(--body-bg-color);
+    color: var(--body-color);
+    text-shadow: var(--body-text-shadow);
+}
+
+#subject{
+    padding: 20px;
+    margin-top: 30px;
+}
+
+#gen-sub, #core-sub{
+    margin-top: 20px;
+}
+
+#shname{
+    margin-top: 20px;
+    font-size: x-large;
+}
+
+#shwei{
+    margin-top: 20px;
+    padding: 5px;
+    font: 1em sans-serif;
+}
+
+
+#sub-progress{
+    color: var(--sub-progress-color);
+    padding: 15px;
+}
+
+.progress-value{
+    font-size: small;
+    font-family: math;
+    padding-left: 5px;
+}
+
+
+progress {
+    accent-color: var(--sub-progress-accent) ;
+}
+
+.subCatHead{
+    padding: 20px;
+    margin-top: -25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.progress-space{
+    margin: 20px;
+    margin-top: var(--header-content-margin-top);
+}
+
+#details{
+    margin-top: var(--header-details-margin-top);
+}
+
+#agenda{
+    background-image: var(--agenda-bg-image);
+    border-radius: 20px;
+    width: 200px;
+    height: 140px;
+    background-size: contain;
+    margin: 20px;
+    margin-top: var(--header-content-margin-top);
+    box-shadow: var(--agenda-box-shadow);
+}
+
+.agendaAnchor{
+    text-align: center;
+    width: inherit;
+    height: inherit;
+}
+
+.agendaAnchor:hover{
+    background-color: rgba(0, 0, 0, 0.75);  
+    position: relative;
+    border-radius: 20px;
+    content: unset;
+}
+
+#agenda:hover .agendaLabel{
+    color: var(--agenda-label-color-hover);
+    position: absolute;
+    font-size: larger;
+    font-family: fantasy;
+    left: 50px;
+    font-style: unset;
+    transform:translateY(55px);
+}
+
+.agendaLabel{
+    color: var(--agenda-label-color);
+    text-decoration: overline;
+    font-family: monospace;
+    font-style: oblique;
+    transition: transform 0.7s;
+}
+
+#name{
+    cursor: pointer;
+}
+
+#editButton{
+    display: none;
+}
+
+#name:hover #editButton{
+    display: inline;
+    font-size: small;
+    cursor: pointer;
+    font-family: system-ui;
+}
+
+#sub-icon{
+    content: var(--sub-icon-content-image);
+    margin-left: 150px;
+    margin-top: 35px;
+}
+
+footer{
+    width: 100%;
+    margin: 0%;
+    background-color: var(--footer-bg-color);
+    padding: 20px;
+}
+
+#theme-selection-section{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.themeButton{
+    margin: 30px;
+    height: 50px;
+    padding: 10px;
+    width: 200px;
+    border: var(--theme-button-border);
+    box-shadow: var(--theme-button-box-shadow);
+    text-align: center;
+    color: var(--theme-button-color);
+    cursor: pointer;
+    background-color: inherit;
+    font-size: medium;
+    font-family: var(--font-family);
+}
+
+#cancelTheme, #saveTheme, #closeSpotify{
+    width: unset;
+    font-size: large;
+}
+
+#cancelTheme:hover, #saveTheme:hover, #closeSpotify:hover{
+    background-color: var(--cancel-save-hover-bg-color);
+    color: var(--cancel-save-hover-color);
+    border: var(--cancel-save-hover-border);
+}
+
+#blinkThemeOption{
+    font-family: cursive;
+    background-color: pink;
+    color:black;
+    border:2px solid black;
+}
+
+#walkerThemeOption{
+    font-family: math;
+    background-color: #002;
+    color:azure;
+    text-shadow: 0px 0px 6px #66CDAA;
+    border:2px solid aqua;
+
+}
+
+#llitThemeOption{
+    font-family: fantasy;
+    background-color: #367588;
+    color:#e1ebee;
+    border:2px solid black;
+
+}
+
+#themeOptions{
+    display: none;
+}
+
+#spotifyEmbeded{
+    display: none;
+}
+
+#closeSpotify{
+    border-radius: 20px;
+    padding: 5px;
+    height: 40px;
+    display: inline;
+    width: 40px !important;
+}
