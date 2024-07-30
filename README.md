@@ -15,7 +15,7 @@ Link to access - https://gopikaganesan.github.io/GATE-Space
 -
 
 - Themes Available: `Blink Mode`, `Walker Mode` and `LLIT Mode`.
-- Progress Data are fetched from `Google Sheets` through `AppScript API` as `json` format.
+- Progress Data are fetched from `Google Sheets` through `Apps Script API` as `json` format.
 - Landing page directs you to enter name, this feature is added for user's accessibility, evenmore you'll have option to edit when you hover on the Name.
 - Play Music is simply a spotify embedded playlist, but the playlist differs as per you change and save the theme.
 
