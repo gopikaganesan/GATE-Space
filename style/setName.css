@@ -9,6 +9,8 @@ body{
 #welcomeMessage{
     font-family: cursive;
     margin: 25px;
+    font-weight: bolder;
+    font-size: xx-large;
     text-align: center;
 }
 
