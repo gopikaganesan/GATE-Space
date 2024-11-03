@@ -86,7 +86,7 @@ async function fetchData() {
     createCards('core-sub',coreSubs);
 
     const totalProgress = jsonData.find(totPro => totPro['Sub Id'] === 'TOTAL')
-    progressValue = totalProgress['Progress'];
+    progressValue = (totalProgress['Progress']*100).toFixed(0);
     createCircularProgress(progressValue);
     console.log("Looks like the data has been fetched properly.. So, Bye for now, Hwaiting!")
 
@@ -123,8 +123,8 @@ function createCards(category,cardData) {
         // Customize card content
         card.setAttribute("href",data['url']);
         card.querySelector('.subName').textContent = data['Subject Title'];
-        card.querySelector('progress').setAttribute("value",data['Progress']);
-        card.querySelector('.progress-value').textContent = data['Progress'] + "%";
+        card.querySelector('progress').setAttribute("value",(data['Progress']*100));
+        card.querySelector('.progress-value').textContent = (data['Progress']*100).toFixed(0) + "%";
         
           // Set background color dynamically
             card.querySelector('.subCard').style = data.styleValue;
@@ -145,7 +145,7 @@ function createCircularProgress(percent){
   const newDiv = document.createElement('div');
 
   // Set the text content of the new div
-  newDiv.textContent = 'No Progress Yet';
+  newDiv.textContent = 'No Progress';
 
   newDiv.style = "background-color: sandybrown;padding: 25px;font-size: 20px;font-family: fantasy;border-radius: 100%;display: ruby-text;border: 8px ridge black; color: black; text-shadow: none;";
 

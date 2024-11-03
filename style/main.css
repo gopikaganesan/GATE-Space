@@ -32,9 +32,6 @@
     --cancel-save-hover-bg-color: lightcoral;
     --cancel-save-hover-color: black;
     --cancel-save-hover-border: 1px solid lightpink;
-    --name-font-weight: bolder;
-    --subname-font-weight: 800;
-    --footer-button-font-weight: bold;
 }
 
 .walker-mode{
@@ -72,9 +69,6 @@
     --cancel-save-hover-bg-color: #5F9EA0;
     --cancel-save-hover-color: #0a2351;
     --cancel-save-hover-border: 1px solid azure;
-    --name-font-weight: bolder;
-    --subname-font-weight: 800;
-    --footer-button-font-weight: bold;
 
 }
 
@@ -114,9 +108,6 @@
     --cancel-save-hover-bg-color: azure;
     --cancel-save-hover-color: black;
     --cancel-save-hover-border: 1px solid black;
-    --name-font-weight: unset;
-    --subname-font-weight: 300;
-    --footer-button-font-weight: unset;
 
 }
 
@@ -160,7 +151,6 @@
 #d2go{
     font-size:xx-large;
     font-family:cursive;
-    font-weight: 700;
     padding: 5px;
 }
 
@@ -173,9 +163,7 @@
     border-radius: 3px;
     text-align: center;
     transition: 2s;
-    margin: 20px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin: 30px;
     color: black;
     text-shadow: none;
     margin-top: var(--header-content-margin-top);
@@ -197,11 +185,8 @@
 /* Add some padding inside the card container */
 .subName {
     padding: 60px;
-    padding-right: 30px;
     margin-top: -180px;
     margin-left: -30px;
-    font-size: large;
-    font-weight: var(--subname-font-weight);
     font-family: var(--font-family);
     color: var(--sub-name-color);
     text-shadow: var(--sub-name-text-shadow);
@@ -226,25 +211,22 @@ header{
     background-image: var(--header-bg-image);
     background-color: var(--header-bg-color);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 30px;
-    padding-left: 0;
-    padding-right: 0;
     color: var(--header-color);
     text-shadow: var(--header-text-shadow);
     background-repeat: no-repeat;
     /* background-size: 380px; */ 
     background-position: var(--header-bg-position);
     animation: var(--header-animation);
-    width: 100vw;
-    margin:0;
+    width: 100%;
+    margin: 0%;
 }
 
 h2{
     font-size: xx-large;
-    font-weight: var(--name-font-weight);
     font-family: var(--font-family);
 }
 
@@ -253,9 +235,6 @@ body{
     background-color: var(--body-bg-color);
     color: var(--body-color);
     text-shadow: var(--body-text-shadow);
-    padding: 0;
-    margin: 0;
-    width: 100vw;
 }
 
 #subject{
@@ -306,14 +285,16 @@ progress {
 .progress-space{
     margin: 20px;
     margin-top: var(--header-content-margin-top);
-    margin-left: 60px;
-    margin-right: 60px;
 }
 
 #details{
     margin-top: var(--header-details-margin-top);
-    margin-left: 60px;
-    margin-right: 60px;
+}
+
+#otherLinks{
+    margin-top: var(--header-content-margin-top);
+    border-top: 3px dotted var(--header-color);
+
 }
 
 #agenda{
@@ -323,8 +304,6 @@ progress {
     height: 140px;
     background-size: contain;
     margin: 20px;
-    margin-left: 60px;
-    margin-right: 60px;
     margin-top: var(--header-content-margin-top);
     box-shadow: var(--agenda-box-shadow);
 }
@@ -382,12 +361,10 @@ progress {
 }
 
 footer{
-    width: 100vw;
+    width: 100%;
     margin: 0%;
     background-color: var(--footer-bg-color);
     padding: 20px;
-    padding-left: 0;
-    padding-right: 0;
 }
 
 #theme-selection-section{
@@ -407,8 +384,7 @@ footer{
     color: var(--theme-button-color);
     cursor: pointer;
     background-color: inherit;
-    font-size: large;
-    font-weight: var(--footer-button-font-weight);
+    font-size: medium;
     font-family: var(--font-family);
 }
 
@@ -425,7 +401,6 @@ footer{
 
 #blinkThemeOption{
     font-family: cursive;
-    font-weight: bold;
     background-color: pink;
     color:black;
     border:2px solid black;
@@ -433,7 +408,6 @@ footer{
 
 #walkerThemeOption{
     font-family: math;
-    font-weight: bold;
     background-color: #002;
     color:azure;
     text-shadow: 0px 0px 6px #66CDAA;
@@ -443,7 +417,6 @@ footer{
 
 #llitThemeOption{
     font-family: fantasy;
-    font-weight: unset;
     background-color: #367588;
     color:#e1ebee;
     border:2px solid black;
@@ -464,4 +437,14 @@ footer{
     height: 40px;
     display: inline;
     width: 40px !important;
+}
+
+.links :hover{
+    font-family: var(--font-family);
+    color: var(--sub-name-color);
+    text-shadow: var(--sub-name-text-shadow);
+}
+
+.links{
+    margin-block: 10px;
 }
